@@ -21,7 +21,7 @@ a {
 }
 .subtitle {
   font-size: 16px;
-  color: #5C5C5C;
+  color: #5c5c5c;
   text-align: center;
 }
 .title {
@@ -32,12 +32,14 @@ a {
 .button--blue {
   padding: 18px 46px 18px 46px;
   border-radius: 40px;
-  background-color: #03D6F3;
-  border: 1px solid #03D6F3;
+  background-color: #03d6f3;
+  border: 1px solid #03d6f3;
+  white-space: nowrap;
 }
 .button {
   padding: 18px 46px 18px 46px;
   border-radius: 40px;
+  white-space: nowrap;
 }
 .button-row {
   display: flex;
@@ -99,21 +101,24 @@ a {
 .section-feature {
   padding-top: 50px;
 }
-
+.section-feature-inner {
+  padding: 0 20px 0 20px;
+}
 .section-feautre__row-items {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 80px;
 }
 
 .section-feature__item {
   display: flex;
+  margin: 6px;
   flex-direction: column;
   justify-content: space-between;
   padding: 40px 50px 40px 50px;
   box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
-  width: 400px;
+  max-width: 400px;
 }
 .title-smaller {
   font-size: 30px;
@@ -158,19 +163,24 @@ a {
 
 .possibilities__paragraph {
   font-weight: 700;
-  color: #5C5C5C;
+  color: #5c5c5c;
 }
 .possibilities__button--blue {
   margin-right: 20px;
 }
 .possibilities__btn {
-  color: #30D7BA;
+  color: #30d7ba;
 }
 .possibilities__btn--blue {
-  color: #ffffff;  
+  color: #ffffff;
 }
 .possibilities__button {
-  border: 1px solid #30D7BA;
+  border: 1px solid #30d7ba;
+}
+.possibilites__image {
+  height: 500px;
+  width: 500px;
+  width: 100%;
 }
 .possibilites__img {
   filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
@@ -190,32 +200,35 @@ a {
 }
 /* ===========================SECTION PERFECT SOLUTIONS (3 РАЗДЕЛ) небольшие корректировки============ */
 .posibilities__content--compressed {
-  display: flex; 
+  display: flex;
   justify-content: space-between; /*увеличиваю высоту текста*/
-  padding: 100px 0 100px 0;
+  padding: 100px 20px 100px 20px;
 }
 .possibilities__text--compressed {
-  padding-top: 40px;    
-  margin-right: 40px;
+  padding-top: 40px;
+  margin-right: 10px;
 }
 .button--blue--compressed {
   margin-right: 4px;
-  padding: 8px 34px 8px 34px;   /*Утончаю кнопки*/
+  padding: 8px 34px 8px 34px; /*Утончаю кнопки*/
 }
 .button__compressed {
-  padding: 8px 34px 8px 34px;   /*Утончаю кнопки*/
+  padding: 8px 34px 8px 34px; /*Утончаю кнопки*/
 }
 
 /* =========================PRICES========================*/
 
 .price-inner {
-  padding: 50px 100px 50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .price__items {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  flex-wrap: wrap;
 }
 .price__item {
   display: flex;
@@ -223,7 +236,8 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 40px;
-  border: 1px solid #DEDEDE;
+  margin: 20px;
+  border: 1px solid #dedede;
   border-radius: 8px;
 }
 .price__button--blue {
@@ -244,17 +258,15 @@ a {
   margin-top: 30px;
 }
 .price__value {
-  color: #30D7BA;
+  color: #30d7ba;
   font-size: 56px;
   font-weight: bolder;
-
 }
 .price__currency-time {
   display: flex;
   flex-direction: column;
   height: 60px;
   line-height: 0px;
-  
 }
 .price__remark {
   font-size: 12px;
@@ -264,7 +276,7 @@ a {
   font-size: 24px;
 }
 .price__options--gray {
-  color: #5C5C5C;
+  color: #5c5c5c;
 }
 .price__options {
   font-size: 14px;
@@ -276,11 +288,11 @@ a {
 
 /* ===============SUBSCRIBE PAGE======================= */
 .subscribe-inner {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-between;
-padding: 60px 200px 60px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 200px 60px 200px;
 }
 .subscribe__email {
   display: flex;
@@ -307,7 +319,7 @@ padding: 60px 200px 60px 200px;
 /* ==============FOOTER================ */
 
 footer {
-  background-color: #112D57;
+  background-color: #112d57;
 }
 .footer-inner {
   padding: 60px 80px 60px 80px;
@@ -325,8 +337,9 @@ footer {
 }
 .footer__items--map {
   border-radius: 10px;
+  margin: 6px;
 }
-.footer__items--contacts{
+.footer__items--contacts {
   height: 200px;
   justify-content: space-between;
 }
